@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "942416796944",
+    "project_id": "fir-realtimedatabase-ed83b",
+    "storage_bucket": "fir-realtimedatabase-ed83b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942416796944:android:1b47248a794bf048a4d995",
+        "android_client_info": {
+          "package_name": "com.example.firebaserealtimedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ82ufSQtxENpCrZmYchEENcZ8JEObHTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
