@@ -31,12 +31,29 @@ class DataRepository {
 
             override fun onCancelled(error: DatabaseError) {
                dataList.value = emptyList()
-
+                handlerError(error)
             }
-
-
         })
 
+        return dataList
+    }
+
+    fun addData(data: Data): Task<Void>{
+        val key = databaseReference.push().key
+        data.id = key
+        return databaseReference.child(key!!).setValue(data)
+    }
+
+    fun updateData(data: Data):Task<Void>{
+        return databaseReference.child(data.id!!).setValue(data)
+    }
+
+    fun deleteData(data: Data): Task<Void>{
+        return databaseReference.child(data.id!!).removeValue()
+    }
+
+    private fun handlerError(error: DatabaseError){
+        error.toException().printStackTrace()
     }
 
 }
